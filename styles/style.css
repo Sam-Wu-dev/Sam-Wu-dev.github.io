@@ -1,0 +1,59 @@
+html
+/*Element selector*/
+
+{
+    font-size: 20px;
+    /*字體大小*/
+    font-family: 'Akaya Telivigala';
+    /*字體*/
+}
+
+p,
+li {
+    line-height: 2;
+    /*行與行的間距*/
+    letter-spacing: 1px;
+    /*字與字的間距*/
+}
+
+html {
+    background-color: #00539F;
+    /*背景顏色*/
+}
+
+body {
+    /* body 為block element，block element 有 padding border margin 三個屬性*/
+    width: 600px;
+    /*元素的寬度*/
+    margin: 0 auto;
+    /*元素外部的空間，當有兩個值時，第一個代表上下，第二個代表左右。auto 會把水平方向剩下的空間分配給左右兩側*/
+    background-color: #FF9500;
+    padding: 0 20px 20px 20px;
+    /*內容周圍的空格，當有四個值時，其依序代表上 右 下 左*/
+    border: 5px solid black;
+    /*位於矩形內容外部的實線，當有一個值時，同時代表上右下左。solid 代表實線*/
+}
+
+h1 {
+    width: 300px;
+    font-size: 60px;
+    text-align: center;
+    /*文字對齊模式*/
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    color: #00539F;
+    /*字的顏色*/
+    text-shadow: 3px 3px 1px black;
+    /*字體的陰影，四個值依序代表，水平位移 垂直位移 模糊程度 顏色*/
+}
+
+img {
+    display: block;
+    /*image是inline element，所以在預設狀態下它沒有padding border margin*/
+    margin: auto;
+}
+
+button {
+    color: black;
+}
