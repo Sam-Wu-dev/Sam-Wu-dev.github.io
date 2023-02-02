@@ -1,1 +1,0 @@
-import{_ as r,o as e,c as t,F as n,r as s,a}from"./index-57a1592f.js";const c={},o={class:"text-white"};function _(d,i){return e(),t("div",o,[(e(),t(n,null,s(50,l=>a("h1",null," a")),64))])}const u=r(c,[["render",_]]);export{u as default};
