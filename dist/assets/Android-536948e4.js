@@ -1,0 +1,1 @@
+import{_ as t,o as a,c as e,F as r,r as n,a as s}from"./index-d4360b1f.js";const c={},o={class:"text-white"};function _(d,i){return a(),e("div",o,[(a(),e(r,null,n(100,l=>s("h1",null," aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa")),64))])}const u=t(c,[["render",_]]);export{u as default};
