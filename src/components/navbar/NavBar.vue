@@ -8,7 +8,7 @@
         </div>
         <ul class="flex items-center w-auto duration-100 ease-in">
             <li class="mx-3" v-for="link in links">
-                <dp :title="link.name" :data="projects" v-if="link.name=='Projects'" class="text-xl hover:text-green-400"></dp>
+                <dp :title="link.name" :data="projects" v-if="link.name=='Projects'"></dp>
                 <a v-else href="{{link.link}}" class="text-xl hover:text-green-400">{{ link.name }}</a>
             </li>
         </ul>
