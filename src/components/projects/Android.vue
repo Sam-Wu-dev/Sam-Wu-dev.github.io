@@ -1,6 +1,6 @@
 <template>
-    <div class="text-white">
-        <h1 v-for="index in 100"> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</h1>
+    <div class="text-red">
+        a
     </div>
 </template>
 

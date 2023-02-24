@@ -6,7 +6,7 @@ const router = createRouter({
     {
       path: "/",
       name: "home",
-      component: ()=>import("../components/projects/Android.vue"),
+      component: ()=>import("../components/Home.vue"),
     },
     {
       path: "/android",
