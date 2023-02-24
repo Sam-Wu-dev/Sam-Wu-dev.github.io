@@ -1,1 +1,0 @@
-import{_ as e,o,c as s,a as t}from"./index-d4360b1f.js";const c={},n=t("h1",{class:"float:right"},"This is Arduino",-1),r=[n];function a(_,i){return o(),s("div",null,r)}const l=e(c,[["render",a]]);export{l as default};
