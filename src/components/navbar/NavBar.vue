@@ -11,7 +11,7 @@
         <ul class="flex items-center w-auto duration-100 ease-in">
             <li class="mx-3" v-for="link in links">
                 <dp :title="link.name" :data="projects" v-if="link.name=='Projects'"></dp>
-                <router-link v-else :to="link.link" class="text-xl hover:text-blue-400">{{ link.name }}</router-link>
+                <router-link v-else :to="link.link" class="text-xl hover:text-blue-700">{{ link.name }}</router-link>
             </li>
         </ul>
     </div>
