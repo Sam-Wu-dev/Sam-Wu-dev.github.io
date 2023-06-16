@@ -13,3 +13,4 @@ git push origin master
 git subtree push --prefix dist origin main
 
 cd -
+# ./deploy.sh

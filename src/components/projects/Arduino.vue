@@ -39,11 +39,11 @@
         <div class="relative px-20">
             <h2 class="text-3xl text-center font-bold py-10">用python函式庫librosa把音檔轉成樂譜
             </h2>
-            <sp :step="'step.1'" :description="'把音檔轉成時頻圖(spectogram)'" :imageSrc="'/src/assets/images/spectogram.jpg'"></sp>
-            <sp :step="'step.2'" :description="'偵測onset frames'" :imageSrc="'/src/assets/images/onsetframes.jpg'"></sp>
-            <sp :step="'step.3'" :description="'找出fundamental frequency'" :imageSrc="'/src/assets/images/fundamentalfrequency.jpg'"></sp>
-            <sp :step="'step.4'" :description="'過濾掉不在onset範圍的值'" :imageSrc="'/src/assets/images/onsetasmask.jpg'"></sp>
-            <sp :step="'step.5'" :description="'把頻率轉成音符，並找出change frame跟計算frame gap，以得出樂譜'" :imageSrc="'/src/assets/images/result.jpg'"></sp>
+            <sp :step="'step.1'" :description="'把音檔轉成時頻圖(spectogram)'" :imageSrc="image_a"></sp>
+            <sp :step="'step.2'" :description="'偵測onset frames'" :imageSrc="image_b"></sp>
+            <sp :step="'step.3'" :description="'找出fundamental frequency'" :imageSrc="image_c"></sp>
+            <sp :step="'step.4'" :description="'過濾掉不在onset範圍的值'" :imageSrc="image_d"></sp>
+            <sp :step="'step.5'" :description="'把頻率轉成音符，並找出change frame跟計算frame gap，以得出樂譜'" :imageSrc="image_e"></sp>
         </div>
         <div class="relative pb-20">
             <h2 class="text-3xl text-center font-bold py-20">用arduino+蜂鳴器演奏樂譜
@@ -71,6 +71,10 @@
 <script lang="ts" setup>
     import sp from './Step.vue'
     import image_a from '../../assets/images/spectogram.jpg'
+    import image_b from '../../assets/images/onsetframes.jpg'
+    import image_c from '../../assets/images/fundamentalfrequency.jpg'
+    import image_d from '../../assets/images/onsetasmask.jpg'
+    import image_e from '../../assets/images/result.jpg'
 </script>
 
 <style scoped>
