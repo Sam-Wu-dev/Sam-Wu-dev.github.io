@@ -25,3 +25,9 @@ import navbar from './components/navbar/NavBar.vue'
       scrollbar-width: none;  /* Firefox */
   }
 </style>
+
+<style>
+:target {
+    scroll-margin-top: 150px; /* Adjust this to match the height of your navigation bar */
+    }
+</style>

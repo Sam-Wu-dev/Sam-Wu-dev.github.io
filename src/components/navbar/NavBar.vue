@@ -25,6 +25,7 @@
         new Link("Arduino","/arduino"),
         new Link("Android","/android"),
         new Link("DeepLearning","/deeplearning"),
+        new Link("NinjaStrikMaster","/ninjastrikemaster"),
     ]
     const links = reactive([
         new Link("Home","/"),
