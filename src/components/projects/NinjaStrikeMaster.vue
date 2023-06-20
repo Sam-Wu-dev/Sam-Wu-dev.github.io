@@ -1,6 +1,6 @@
 <template>
     <div class="relative px-20">
-        <div class="flex items-center justify-between px-48 my-12">
+        <div class="flex items-center justify-between px-48 my-24">
             <img src="../../assets/images/ninja1.png" class=" h-48 w-48" />
             <img src="../../assets/images/kunai2.png" class=" h-8 w-24" />
             <h1 class="relative font-bold text-4xl text-opcity-100">非接觸式街機遊戲​
@@ -13,9 +13,9 @@
             </h2>
             <p class="text-center text-2xl">使用非接觸式的方式遊玩丟球遊戲機台</p>
         </div>
-        <div class="relative top-8">
+        <div class="relative my-24">
             <div class="flex justify-between px-64 my-12">            
-                <div class="w-48 h-36 text-center">
+                <div class="flex flex-col w-48 h-36 justify-center text-center items-center">
                     <h3 class="text-xl font-bold"> 作者</h3>    
                     <p class="break-words">
                         吳少森 、
@@ -24,14 +24,14 @@
                         何定綸
                     </p>
                 </div>
-                <div class="w-48 h-36 text-center">
+                <div class="flex flex-col w-48 h-36 justify-center text-center items-center">
                     <h3 class="text-xl font-bold"> 開發環境</h3>
                     <p class="break-words">
                         Unity<br>
                         Google colab<br>
                     </p>
                 </div>
-                <div class="w-48 h-36 text-center">
+                <div class="flex flex-col w-48 h-36 justify-center text-center items-center">
                     <h3 class="text-xl font-bold"> 使用設備</h3>
                     <p class="break-words">
                         有鏡頭的筆電 <br>
@@ -112,9 +112,3 @@
     import image_g from '../../assets/images/finishpage.png'
     import image_h from '../../assets/images/throwdetector.gif'
 </script>
-
-<style scoped>
-    .bg-arduino {
-        background-image: url(../.././assets/images/arduino.jpg);
-    }
-</style>

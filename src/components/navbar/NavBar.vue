@@ -22,10 +22,11 @@
     import dp from './DropDown.vue'
     import { Link } from '../../assets/class'
     const projects = [
-        new Link("Arduino","/arduino"),
-        new Link("Android","/android"),
+        new Link("Arduino音樂盒","/arduino"),
+        new Link("Android通訊軟體","/android"),
         new Link("DeepLearning","/deeplearning"),
-        new Link("NinjaStrikMaster","/ninjastrikemaster"),
+        new Link("大學專題","/ninjastrikemaster"),
+        new Link("Matlab車牌辨識","/licenseplaterecognition"),
     ]
     const links = reactive([
         new Link("Home","/"),
