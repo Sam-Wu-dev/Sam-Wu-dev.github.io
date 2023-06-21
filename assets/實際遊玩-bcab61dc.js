@@ -1,1 +1,0 @@
-const s="/assets/ninja1-3c02fa09.png",a="/assets/kunai2-d752aed6.png",t="/assets/kunai1-c84da868.png",n="/assets/ninja2-f3b22b9c.png",o="/assets/實際遊玩-50dd5603.mp4";export{s as _,a,t as b,n as c,o as d};
