@@ -1,14 +1,13 @@
 <template>
     <div class="relative px-20">
-        <div class="flex items-center justify-between px-48 my-24">
-            <img src="../../assets/images/ninja1.png" class=" h-48 w-48" />
-            <img src="../../assets/images/kunai2.png" class=" h-8 w-24" />
-            <h1 class="relative font-bold text-4xl text-opcity-100">車牌位置辨識器​</h1>
-            <img src="../../assets/images/kunai1.png" class=" h-8 w-24" />
-            <img src="../../assets/images/ninja2.png" class="h-48 w-48" />
+        <div class="relative my-24">
+            <div class="flex justify-center items-center h-48 bg-arduino bg-repeat-round w-1/2 m-auto">
+                <div class="absolute inset-0 h-48 bg-white bg-opacity-90"></div>
+                <h1 class="relative font-bold text-5xl text-opcity-100">車牌位置辨識器​</h1>
+            </div>
         </div>
         <div class="relative my-24">
-            <h2 class="text-3xl text-center font-bold pb-8">目標
+            <h2 class="text-4xl text-center font-bold pb-8">目標
             </h2>
             <p class="text-center text-2xl">把車牌中的每個數字在畫面中的位置分別標示出來</p>
         </div>
@@ -31,7 +30,7 @@
             </div>
         </div>
         <div class="relative my-24">
-            <h2 class="text-3xl text-center font-bold pb-8">實作流程
+            <h2 class="text-4xl text-center font-bold pb-8">實作流程
             </h2>
             <div class="flex items-center justify-center">
                 <div class="flex flex-col items-start text-2xl">
@@ -41,30 +40,51 @@
             </div>
         </div>
         <hr class="border-gray-200 my-20"/>
-        <div class="relative px-20" id="section1">
+        <div class="relative px-20 my-24" id="section1">
             <h2 class="text-3xl text-center font-bold pb-8">Process A
             </h2>
             <sp :step="'step.1'" :description="'載入原圖'" :imageSrc="image_a"></sp>
             <sp :step="'step.2'" :description="'把圖轉為灰階圖並用[-1 0 1; -1 0 1; -1 0 1]filter偵測縱向的邊緣'" :imageSrc="image_b"></sp>
-            <sp :step="'step.3'" :description="'用Isomap演算法把圖轉為Binary，再用order filter去除雜訊'" :imageSrc="image_c"></sp>
+            <sp :step="'step.3'" :description="'用imbinarize把圖轉為二值圖，再用order filter去除雜訊'" :imageSrc="image_c"></sp>
             <sp :step="'step.4'" :description="'使用橫向的膨脹，再用imfill把空洞補齊'" :imageSrc="image_d"></sp>
             <sp :step="'step.5'" :description="'依序進行橫向的侵蝕與膨脹，直到只剩下大面積的區塊'" :imageSrc="image_e"></sp>
-            <sp :step="'step.6'" :description="'透過長寬比以及與長方形的相似程度找出車牌位置'" :imageSrc="image_f"></sp>
+            <sp :step="'step.6'" :description="'用bwconncomp找出bounding box'" :imageSrc="image_j"></sp>
+            <sp :step="'step.7'" :description="'透過長寬比以及、寬度限制、高度限制以及與長方形的相似程度找出車牌位置的bounding box'" :imageSrc="image_f"></sp>
         </div>
-        <div class="relative px-20" id="section1">
+        <div class="relative px-20 my-24" id="section1">
             <h2 class="text-3xl text-center font-bold pb-8">Process B
             </h2>
-            <sp :step="'step.1'" :description="'只留下車牌影像'" :imageSrc="image_g"></sp>
-            <sp :step="'step.2'" :description="'用Isomap演算法把圖轉為Binary，再用median filter去除雜訊'" :imageSrc="image_h"></sp>
+            <sp :step="'step.1'" :description="'用bounding box框出車牌影像'" :imageSrc="image_g"></sp>
+            <sp :step="'step.2'" :description="'用imbinarize把圖轉為二值圖，再用imcomplement反轉黑白'" :imageSrc="image_h"></sp>
+            <sp :step="'step.3'" :description="'用bwconncomp找出bounding box'" :imageSrc="image_k"></sp>
+            <sp :step="'step.4'" :description="'透過面積以及與長方形的相似程度找出每個字的bounding box'" :imageSrc="image_l"></sp>
         </div>
-        <div class="relative pb-20" id="section2">
-            <h2 class="text-3xl text-center font-bold pb-20">成果展示</h2>
-            <div class="flex items-center justify-center">
-                <video class="h-1/8 w-2/5" controls>
-                        <source src="../../assets/video/實際遊玩.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
+        <hr class="border-gray-200"/>
+        <div class="relative my-24" id="section2">
+            <h2 class="text-4xl text-center font-bold my-12">成果展示</h2>
+            <div class="flex flex-col items-center justify-center">
+                <div class="flex items-center justify-between w-3/5 py-12">
+                    <p class="text-3xl text-center font-bold w-2/5"> 原圖 </p>
+                    <p class="text-3xl text-center font-bold w-2/5"> Result </p>
+                </div>
+                <div class="flex items-center justify-between w-3/5 py-12">
+                    <img :src="image_a" class="h-1/5 w-2/5" />
+                    <img src="../../assets/images/license_p.png" class="h-1/5 w-2/5" />
+                </div>
+                <div class="flex items-center justify-between w-3/5 py-12">
+                    <img src="../../assets/images/001.jpg" class="h-1/5 w-2/5" />
+                    <img src="../../assets/images/license_m.png" class="h-1/5 w-2/5" />
+                </div>
+                <div class="flex items-center justify-between w-3/5 py-12">
+                    <img src="../../assets/images/003.jpg" class="h-1/5 w-2/5" />
+                    <img src="../../assets/images/license_n.png" class="h-1/5 w-2/5" />
+                </div>
+                <div class="flex items-center justify-between w-3/5 py-12">
+                    <img src="../../assets/images/004.jpg" class="h-1/5 w-2/5" />
+                    <img src="../../assets/images/license_o.png" class="h-1/5 w-2/5" />
+                </div>
             </div>
+            
         </div>
     </div>
 </template>
@@ -80,4 +100,13 @@
     import image_f from '../../assets/images/license_f.png'
     import image_g from '../../assets/images/license_g.png'
     import image_h from '../../assets/images/license_h.png'
+    import image_j from '../../assets/images/license_j.png'
+    import image_k from '../../assets/images/license_k.png'
+    import image_l from '../../assets/images/license_l.png'
 </script>
+
+<style scoped>
+    .bg-arduino {
+        background-image: url(../.././assets/images/license_p.png);
+    }
+</style>

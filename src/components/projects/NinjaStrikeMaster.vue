@@ -3,13 +3,13 @@
         <div class="flex items-center justify-between px-48 my-24">
             <img src="../../assets/images/ninja1.png" class=" h-48 w-48" />
             <img src="../../assets/images/kunai2.png" class=" h-8 w-24" />
-            <h1 class="relative font-bold text-4xl text-opcity-100">非接觸式街機遊戲​
+            <h1 class="relative font-bold text-5xl text-opcity-100 text-center">非接觸式街機遊戲​
 –Ninja Strike Master​</h1>
             <img src="../../assets/images/kunai1.png" class=" h-8 w-24" />
             <img src="../../assets/images/ninja2.png" class="h-48 w-48" />
         </div>
         <div class="relative my-24">
-            <h2 class="text-3xl text-center font-bold pb-8">目標
+            <h2 class="text-4xl text-center font-bold pb-8">目標
             </h2>
             <p class="text-center text-2xl">使用非接觸式的方式遊玩丟球遊戲機台</p>
         </div>
@@ -41,7 +41,7 @@
             </div>
         </div>
         <div class="relative my-24">
-            <h2 class="text-3xl text-center font-bold pb-8">實作流程
+            <h2 class="text-4xl text-center font-bold pb-8">實作流程
             </h2>
             <div class="flex items-center justify-center">
                 <div class="flex flex-col items-start text-2xl">
@@ -91,7 +91,7 @@
             </div>
         </div>
         <div class="relative pb-20" id="section2">
-            <h2 class="text-3xl text-center font-bold pb-20">成果展示</h2>
+            <h2 class="text-4xl text-center font-bold pb-20">成果展示</h2>
             <div class="flex items-center justify-center">
                 <video class="h-1/8 w-2/5" controls>
                         <source src="../../assets/video/實際遊玩.mp4" type="video/mp4">

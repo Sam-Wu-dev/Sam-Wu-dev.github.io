@@ -3,11 +3,11 @@
         <div class="relative my-24">
             <div class="flex justify-center items-center h-48 bg-arduino bg-repeat-round w-10/12 m-auto">
                 <div class="absolute inset-0 h-48 bg-white bg-opacity-75"></div>
-                <h1 class="relative font-bold text-4xl text-opcity-100">Arduino音樂盒</h1>
+                <h1 class="relative font-bold text-5xl text-opcity-100">Arduino音樂盒</h1>
             </div>
         </div>
         <div class="relative my-24">
-            <h2 class="text-3xl text-center font-bold pb-8">目標
+            <h2 class="text-4xl text-center font-bold pb-8">目標
             </h2>
             <p class="text-center text-2xl">用python函式庫librosa把音檔轉成樂譜，並用arduino+蜂鳴器演奏</p>
         </div>
@@ -41,7 +41,7 @@
             </div>
         </div>
         <div class="relative px-20" id="section1">
-            <h2 class="text-3xl text-center font-bold">實作流程
+            <h2 class="text-4xl text-center font-bold">實作流程
             </h2>
             <sp :step="'step.1'" :description="'把音檔轉成時頻圖(spectogram)'" :imageSrc="image_a"></sp>
             <sp :step="'step.2'" :description="'偵測onset frames'" :imageSrc="image_b"></sp>
@@ -50,7 +50,7 @@
             <sp :step="'step.5'" :description="'把頻率轉成音符，並找出change frame跟計算frame gap，以得出樂譜'" :imageSrc="image_e"></sp>
         </div>
         <div class="relative pb-20" id="section2">
-            <h2 class="text-3xl text-center font-bold py-20">成果展示</h2>
+            <h2 class="text-4xl text-center font-bold py-20">成果展示</h2>
             <div class="flex items-center justify-center">
                 <div class="flex items-center justify-center px-10">
                     origin:

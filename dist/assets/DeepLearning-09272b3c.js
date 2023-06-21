@@ -1,1 +1,0 @@
-import{_ as s,o as n,c as t,F as c,b as e}from"./index-07a262a3.js";const r={},a=e("div",{class:"fixed top-30 left-10 ring-2 h-60 w-60 bg-red-900"},[e("h1",null,"This is DL")],-1),o=e("div",{class:"ring-2 h-60 w-60 bg-green-900"},[e("h1",null,"This is DaL")],-1);function i(l,_){return n(),t(c,null,[a,o],64)}const h=s(r,[["render",i]]);export{h as default};
