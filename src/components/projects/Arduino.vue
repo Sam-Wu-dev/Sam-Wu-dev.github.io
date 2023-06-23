@@ -72,7 +72,7 @@
 </template>
 
 <script lang="ts" setup>
-    import sp from './Step.vue'
+    import sp from '../helper/Step.vue'
     import image_a from '../../assets/images/spectogram.jpg'
     import image_b from '../../assets/images/onsetframes.jpg'
     import image_c from '../../assets/images/fundamentalfrequency.jpg'

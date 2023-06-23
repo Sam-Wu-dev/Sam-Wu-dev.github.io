@@ -91,7 +91,7 @@
 
 
 <script lang="ts" setup>
-    import sp from './Step.vue'
+    import sp from '../helper/Step.vue'
     import image_a from '../../assets/images/license_a.jpg'
     import image_b from '../../assets/images/license_b.png'
     import image_c from '../../assets/images/license_c.png'

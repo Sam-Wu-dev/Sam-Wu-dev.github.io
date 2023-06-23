@@ -1,5 +1,5 @@
 <template>
-    <div class="fixed top-0 left-0 right-0 px-6 py-4 flex justify-between items-center text-gray-900 z-10 bg-gray-100 border-b">
+    <div class="fixed top-0 left-0 right-0 px-12 py-4 flex justify-between items-center text-gray-900 z-10 bg-gray-100 border-b">
         <div class="flex items-center cursor-pointer">
             <a href="https://github.com/Sam-Wu-dev" class="flex items-center" target="blank">
                 <h1 class="text-xl">Sam-Wu</h1>
@@ -23,15 +23,13 @@
     import { Link } from '../../assets/class'
     const projects = [
         new Link("Arduino音樂盒","/arduino"),
-        new Link("Android通訊軟體","/android"),
-        new Link("DeepLearning","/deeplearning"),
-        new Link("大學專題","/ninjastrikemaster"),
+        //new Link("Android通訊軟體","/android"),
         new Link("Matlab車牌辨識","/licenseplaterecognition"),
+        new Link("大學專題","/ninjastrikemaster"),
     ]
     const links = reactive([
         new Link("Home","/"),
-        new Link("About","#"),
         new Link("Projects","#"),
-        new Link("Working On","#"),
+        new Link("在校成績","/score"),
         ])
 </script>

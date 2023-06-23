@@ -104,7 +104,7 @@
 
 
 <script lang="ts" setup>
-    import sp from './Step.vue'
+    import sp from '../helper/Step.vue'
     import image_c from '../../assets/images/menu.png'
     import image_d from '../../assets/images/fcn.png'
     import image_e from '../../assets/images/hitbox.jpg'
