@@ -23,6 +23,7 @@
     import { Link } from '../../assets/class'
     const projects = [
         new Link("Arduino音樂盒","/arduino"),
+        new Link("OpenGL渲染器","/opengl"),
         //new Link("Android通訊軟體","/android"),
         new Link("Matlab車牌辨識","/licenseplaterecognition"),
         new Link("大學專題","/ninjastrikemaster"),

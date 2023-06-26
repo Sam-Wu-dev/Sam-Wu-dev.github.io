@@ -1,23 +1,22 @@
 <template>
     <div class="relative px-20">
-        <div class="flex items-center justify-between px-24 my-24 h-48">
-            <img src="../../assets/images/license_g.png" class="h-24 w-80" />
-            <h1 class="relative font-bold text-5xl text-opcity-100 text-center">車牌位置辨識器​</h1>
-            <img src="../../assets/images/license_l.png" class="h-24 w-80" />
+        <div class="relative my-24">
+            <div class="flex justify-center items-center h-48 w-1/2 m-auto">
+                <div class="absolute inset-0 h-48 bg-white bg-opacity-90"></div>
+                <h1 class="relative font-bold text-5xl text-opcity-100">OpenGL渲染器​</h1>
+            </div>
         </div>
         <div class="relative my-24">
             <h2 class="text-4xl text-center font-bold pb-8">目標
             </h2>
-            <p class="text-center text-2xl">把車牌中的每個數字在畫面中的位置分別標示出來</p>
+            <p class="text-center text-2xl">輸入一個obj檔，並用OpenGL實作出該物件在point light、direction light以及spot light下的渲染效果</p>
         </div>
         <div class="relative my-24">
             <div class="flex justify-center my-12">            
                 <div class="flex flex-col w-48 h-36 justify-center text-center items-center mr-24">
                     <h3 class="text-xl font-bold"> 作者</h3>    
                     <p class="break-words">
-                        吳少森 、
-                        陳柏翰 、
-                        陳俊良 
+                        吳少森 、吳昱霆教授
                     </p>
                 </div>
                 <div class="flex flex-col w-48 h-36 justify-center text-center items-center">
