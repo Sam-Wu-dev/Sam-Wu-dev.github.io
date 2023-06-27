@@ -16,7 +16,7 @@
         <div class="relative my-24">
             <div class="flex justify-between px-64 my-12">            
                 <div class="flex flex-col w-48 h-36 justify-center text-center items-center">
-                    <h3 class="text-xl font-bold"> 作者</h3>    
+                    <h3 class="text-2xl font-bold pb-2"> 作者</h3>    
                     <p class="break-words">
                         吳少森 、
                         陳柏翰 <br>
@@ -25,7 +25,7 @@
                     </p>
                 </div>
                 <div class="flex flex-col w-48 h-36 justify-center text-center items-center">
-                    <h3 class="text-xl font-bold"> 開發環境</h3>
+                    <h3 class="text-2xl font-bold pb-2"> 開發環境</h3>
                     <p class="break-words">
                         Unity<br>
                         Google colab<br>
@@ -55,7 +55,7 @@
             <h2 class="text-3xl text-center font-bold">Process A
             </h2>
             <div class="flex flex-col my-10 py-3 px-20">
-                <div class="flex items-center justify-between px-60">
+                <div class="flex items-center justify-between px-24">
                     <div>
                     <h3 class="text-2xl font-bold">step.1</h3>
                     <p class="break-words w-40">使用人體姿態辨識工具Openpose來抓取身體特徵點</p>
@@ -68,7 +68,7 @@
             <!-- <sp :step="'step.1'" :description="'使用人體姿態辨識工具Openpose來抓取身體特徵點'" :imageSrc="image_a"></sp> -->
             <sp :step="'step.2'" :description="'透過觀察丟球動作找出丟球結束幀'" :imageSrc="image_h"></sp>
             <div class="flex flex-col my-10 py-3 px-20">
-                <div class="flex items-center justify-between px-60">
+                <div class="flex items-center justify-between px-24">
                     <div>
                     <h3 class="text-2xl font-bold">step.3</h3>
                     <p class="break-words w-40">蒐集訓練資料</p>

@@ -13,7 +13,7 @@
         <div class="relative my-24">
             <div class="flex justify-center my-12">            
                 <div class="flex flex-col w-48 h-36 justify-center text-center items-center mr-24">
-                    <h3 class="text-xl font-bold"> 作者</h3>    
+                    <h3 class="text-2xl font-bold pb-2"> 作者</h3>    
                     <p class="break-words">
                         吳少森 、
                         陳柏翰 、
@@ -21,7 +21,7 @@
                     </p>
                 </div>
                 <div class="flex flex-col w-48 h-36 justify-center text-center items-center">
-                    <h3 class="text-xl font-bold"> 開發環境</h3>
+                    <h3 class="text-2xl font-bold pb-2"> 開發環境</h3>
                     <p class="break-words">
                         Matlab<br>
                     </p>

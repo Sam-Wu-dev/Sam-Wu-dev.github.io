@@ -14,14 +14,14 @@
         <div class="relative my-24">
             <div class="flex justify-between px-72">            
                 <div class="w-48 h-36 flex flex-col items-center justify-center text-center">
-                    <h3 class="text-2xl font-bold">作者</h3>    
+                    <h3 class="text-2xl font-bold pb-2">作者</h3>    
                     <p class="break-words">
                         吳少森 <br>
                         何定綸
                     </p>
                 </div>
                 <div class="w-48 h-36 flex flex-col items-center justify-center text-center">
-                    <h3 class="text-2xl font-bold"> 開發環境</h3>
+                    <h3 class="text-2xl font-bold pb-2"> 開發環境</h3>
                     <p class="break-words">
                         Arduino IDE<br>
                         <div>
@@ -32,7 +32,7 @@
                     </p>
                 </div>
                 <div class="w-48 h-36 flex flex-col items-center justify-center text-center">
-                    <h3 class="text-2xl font-bold"> 使用設備</h3>
+                    <h3 class="text-2xl font-bold pb-2"> 使用設備</h3>
                     <p class="break-words">
                         Arduino mega 2560<br>
                         蜂鳴器 * 1
@@ -40,7 +40,7 @@
                 </div>
             </div>
         </div>
-        <div class="relative px-20" id="section1">
+        <div class="relative px-20 my-24" id="section1">
             <h2 class="text-4xl text-center font-bold">實作流程
             </h2>
             <sp :step="'step.1'" :description="'把音檔轉成時頻圖(spectogram)'" :imageSrc="image_a"></sp>
