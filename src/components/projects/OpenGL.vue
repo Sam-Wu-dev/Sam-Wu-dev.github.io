@@ -37,7 +37,7 @@
                 <div class="flex flex-col items-start text-2xl">
                     <a href="#section1">A.讀檔並把物件處理成一個一個的三角形</a>
                     <a href="#section2">B.進入vertex shader，以及rasterizer​</a>
-                    <a href="#section2">C.進入fragment shader，並用Phong reflection model實作出光線效果​</a>
+                    <a href="#section3">C.進入fragment shader，並用Phong reflection model實作出光線效果​</a>
                 </div>
             </div>
         </div>
@@ -160,7 +160,7 @@
                 </div>
             </div>
         </div>
-        <div class="relative px-20 my-24" id="section2">
+        <div class="relative px-20 my-24" id="section3">
             <h2 class="text-3xl text-center font-bold pb-8">Process C
             </h2>
             <div class="flex flex-col my-10 py-3">

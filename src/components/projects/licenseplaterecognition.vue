@@ -50,7 +50,7 @@
             <sp :step="'step.6'" :description="'用bwconncomp找出bounding box'" :imageSrc="image_j"></sp>
             <sp :step="'step.7'" :description="'透過長寬比以及、寬度限制、高度限制以及與長方形的相似程度找出車牌位置的bounding box'" :imageSrc="image_f"></sp>
         </div>
-        <div class="relative px-20 my-24" id="section1">
+        <div class="relative px-20 my-24" id="section2">
             <h2 class="text-3xl text-center font-bold pb-8">Process B
             </h2>
             <sp :step="'step.1'" :description="'用bounding box框出車牌影像'" :imageSrc="image_g"></sp>
@@ -59,7 +59,7 @@
             <sp :step="'step.4'" :description="'透過面積以及與長方形的相似程度找出每個字的bounding box'" :imageSrc="image_l"></sp>
         </div>
         <hr class="border-gray-200"/>
-        <div class="relative my-24" id="section2">
+        <div class="relative my-24">
             <h2 class="text-4xl text-center font-bold my-12">成果展示</h2>
             <div class="flex flex-col items-center justify-center">
                 <div class="flex items-center justify-between w-3/5 py-12">
