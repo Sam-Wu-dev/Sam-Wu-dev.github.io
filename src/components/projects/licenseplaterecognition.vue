@@ -1,6 +1,6 @@
 <template>
     <div class="relative px-20">
-        <div class="flex items-center justify-between px-24 my-24 h-48">
+        <div class="flex items-center justify-between px-48 my-24 h-48">
             <img src="../../assets/images/license_g.png" class="h-24 w-80" />
             <h1 class="relative font-bold text-5xl text-opcity-100 text-center">車牌位置辨識器​</h1>
             <img src="../../assets/images/license_l.png" class="h-24 w-80" />
