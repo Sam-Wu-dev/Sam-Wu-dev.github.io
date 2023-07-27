@@ -9,7 +9,7 @@ import navbar from './components/navbar/NavBar.vue'
     <div class="fixed inset-0 bg-gray-900 bg-opacity-50"></div> -->
     <navbar/>
     <div class="relative top-20">
-      <RouterView class="px-4"/>   
+      <RouterView/>   
       <myFooter></myFooter>
     </div>
 
