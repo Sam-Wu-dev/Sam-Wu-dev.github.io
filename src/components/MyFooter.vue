@@ -4,16 +4,9 @@
     <footer class="py-8 px-20">
       <div class="flex justify-between">
         <div class="flex">
-          <a
-            href="https://github.com/Sam-Wu-dev"
-            class="flex items-center"
-            target="blank"
-          >
-            <span class="text-gray-900 text-2xl ml-2 mx-3"
-              ><i class="bi bi-github"></i
-            ></span>
-            <span
-              class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+          <a href="https://github.com/Sam-Wu-dev" class="flex items-center" target="blank">
+            <span class="mx-3 ml-2 text-2xl text-gray-900"><i class="bi bi-github"></i></span>
+            <span class="self-center whitespace-nowrap text-2xl font-semibold dark:text-white"
               >Sam-Wu</span
             >
           </a>
