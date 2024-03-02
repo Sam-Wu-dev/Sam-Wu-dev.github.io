@@ -2,7 +2,7 @@
   <pj>
     <template v-slot:head>
       <div class="bg-arduino m-auto flex h-48 w-10/12 items-center justify-center bg-repeat-round">
-        <div class="absolute inset-0 h-48 bg-white bg-opacity-75"></div>
+        <div class="absolute inset-0 h-72 bg-white bg-opacity-75"></div>
         <h1 class="text-opcity-100 relative text-5xl font-bold">Arduino音樂盒</h1>
       </div>
     </template>
@@ -39,14 +39,14 @@
       <div class="flex items-center justify-center">
         <div class="flex items-center justify-center px-10">
           origin:
-          <audio controls>
+          <audio controls class="pl-6">
             <source src="../../assets/audio/小星星20230401.mp3" type="audio/mpeg" />
             Your browser does not support the audio element.
           </audio>
         </div>
         <div class="flex items-center justify-center">
           result:
-          <audio controls>
+          <audio controls class="pl-6">
             <source src="../../assets/audio/小星星20230401.wav" type="audio/mpeg" />
             Your browser does not support the audio element.
           </audio>

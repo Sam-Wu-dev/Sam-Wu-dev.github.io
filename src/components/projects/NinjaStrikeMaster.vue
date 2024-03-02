@@ -1,14 +1,9 @@
 <template>
   <pj>
     <template v-slot:head>
-      <div class="my-24 flex items-center justify-between px-48">
-        <img src="../../assets/images/ninja1.png" class="h-48 w-48" />
-        <img src="../../assets/images/kunai2.png" class="h-8 w-24" />
-        <h1 class="text-opcity-100 relative text-center text-5xl font-bold">
-          非接觸式街機遊戲-Ninja Strike Master
-        </h1>
-        <img src="../../assets/images/kunai1.png" class="h-8 w-24" />
-        <img src="../../assets/images/ninja2.png" class="h-48 w-48" />
+      <div class="bg-rabbit m-auto flex h-48 w-10/12 items-center justify-center  bg-center" style="background-size: contain;">
+        <div class="absolute inset-0 h-72 bg-white bg-opacity-75"></div>
+        <h1 class="text-opcity-100 relative text-5xl font-bold">非接觸式街機遊戲-Ninja Strike Master</h1>
       </div>
     </template>
     <template v-slot:target> 使用非接觸式的方式遊玩丟球遊戲機台 </template>
@@ -31,7 +26,7 @@
       <sp :step="'step.1'" :description="'使用人體姿態辨識工具Openpose來抓取身體特徵點'">
         <img src="../../assets/images/bodykeypoint.png" class="w-50 h-80" />
       </sp>
-      <sp :step="'step.2'" :description="'透過觀察丟球動作找出丟球結束幀'">
+      <sp :step="'step.2'" :description="'透過觀察丟球動作找出丟球結束幀的判斷方式'">
         <img src="../../assets/images/throwdetector.gif" class="h-1/5 w-3/5" />
       </sp>
       <sp :step="'step.3'" :description="'蒐集訓練資料'">

@@ -1,14 +1,13 @@
 <template>
   <pj>
     <template v-slot:head>
-      <div class="my-24 flex h-48 items-center justify-between px-36">
-        <img src="../../assets/images/license_g.png" class="h-24 w-80" />
-        <h1 class="relative text-center text-5xl font-bold">車牌位置辨識器</h1>
-        <img src="../../assets/images/license_l.png" class="h-24 w-80" />
+      <div class="bg-rabbit m-auto flex h-48 w-10/12 items-center justify-center  bg-center" style="background-size: contain;">
+        <div class="absolute inset-0 h-72 bg-white bg-opacity-75"></div>
+        <h1 class="text-opcity-100 relative text-5xl font-bold">車牌位置辨識器</h1>
       </div>
     </template>
     <template v-slot:target> 把車牌中的每個數字在畫面中的位置分別標示出來 </template>
-    <template v-slot:author> 吳少森 、 陳柏翰 、 陳俊良 </template>
+    <template v-slot:author> 吳少森 <br /> 陳柏翰 <br /> 陳俊良 </template>
     <template v-slot:environment> Matlab Online </template>
     <template v-slot:language> Matlab </template>
     <template v-slot:process>

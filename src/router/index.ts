@@ -9,50 +9,30 @@ const router = createRouter({
       component: () => import('../components/HomePage.vue')
     },
     {
-      path: '/score',
-      name: 'score',
-      component: () => import('../components/Score.vue')
-    },
-    {
       path: '/arduino',
       name: 'arduino',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: () => import('../components/projects/ArduinoMusicBox.vue')
     },
     {
       path: '/ninjastrikemaster',
       name: 'ninjastrikemaster',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: () => import('../components/projects/NinjaStrikeMaster.vue')
     },
     {
       path: '/licenseplaterecognition',
       name: 'licenseplaterecognition',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../components/projects/LicensePlateRecognition.vue')
+      component: () => import('../components/projects/licenseplaterecognition.vue')
     },
     {
       path: '/opengl',
       name: 'opengl',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: () => import('../components/projects/OpenGL.vue')
     },
     {
       path: '/test',
       name: 'test',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: () => import('../components/projects/TestPage.vue')
-    }
+    },{ path: '/:pathMatch(.*)*', name: 'NotFound', component: () => import('../components/HomePage.vue') }
   ]
 })
 

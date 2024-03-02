@@ -34,7 +34,6 @@ const projects = [
 ]
 const links = reactive([
   new Link('Home', '/'),
-  new Link('Projects', '#'),
-  new Link('Score', '/score')
+  new Link('Projects', '#')
 ])
 </script>
