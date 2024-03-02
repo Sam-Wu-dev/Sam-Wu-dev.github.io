@@ -1,12 +1,12 @@
 <template>
   <div class="max-w-5xl mx-auto px-8 py-12">
-    <header class="text-center">
+    <header class="text-center my-24">
       <h1 class="text-4xl border-b inline-block mb-4">Hi, I'm SHAO-SEN WU</h1>
       <p class="text-xl">A Passionate Software Engineer</p>
     </header>
     <section class="my-12">
       <h2 class="text-3xl font-bold mb-6">About Me</h2>
-      <p>我是吳少森，今年22歲，目前為臺北大學資工系4年級學生，寫過網頁前/後端、Anroid App，對於卡牌遊戲很有興趣。</p>
+      <p>我是吳少森，今年22歲，目前為臺北大學資工系應屆畢業生 ，寫過網頁前/後端、Anroid App，對於多媒體領域及遊戲製作很有興趣。</p>
     </section>
     <section class="my-12">
       <h2 class="text-3xl font-bold mb-6">Education</h2>

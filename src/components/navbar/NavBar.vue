@@ -4,10 +4,13 @@
   >
     <div class="flex cursor-pointer items-center">
       <a href="https://github.com/Sam-Wu-dev" class="flex items-center" target="blank">
+        
+        <img src="../../assets/images/ionia.jpg" class="mr-3 w-8 h-8 rounded-full"/>
+
         <h1 class="text-xl">Sam-Wu</h1>
-        <span class="ml-2 text-xl text-gray-900">
+        <!-- <span class="ml-2 text-xl text-gray-900">
           <i class="bi bi-github"></i>
-        </span>
+        </span> -->
       </a>
     </div>
     <ul class="flex w-auto items-center duration-100 ease-in">
@@ -28,7 +31,6 @@ import { Link } from '../../assets/class'
 const projects = [
   new Link('Arduino音樂盒', '/arduino'),
   new Link('OpenGL渲染器', '/opengl'),
-  //new Link("Android通訊軟體","/android"),
   new Link('Matlab車牌辨識', '/licenseplaterecognition'),
   new Link('大學專題', '/ninjastrikemaster')
 ]

@@ -5,7 +5,7 @@
       <div class="flex justify-between">
         <div class="flex">
           <a href="https://github.com/Sam-Wu-dev" class="flex items-center" target="blank">
-            <span class="mx-3 ml-2 text-2xl text-gray-900"><i class="bi bi-github"></i></span>
+            <img src="../assets/images/ionia.jpg" class="mr-3 w-8 h-8 rounded-full"/>
             <span class="self-center whitespace-nowrap text-2xl font-semibold dark:text-white"
               >Sam-Wu</span
             >
